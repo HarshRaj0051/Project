@@ -1,0 +1,251 @@
+.emailForm {
+  background-position: center;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Set container to relative positioning */
+  
+}
+
+/* WhatsApp Icon Container */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  margin-right: -16px;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Icon Image */
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Hover Effect */
+.whatsapp-icon:hover {
+  background-color: #25d366; /* WhatsApp brand color */
+}
+
+
+#mapdiv iframe{width:700px;
+  height:400px;
+  padding:10px;
+  margin-left:60px;
+border:solid 1px rgb(85, 83, 83);}
+.Container {
+  position: relative;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.emailForm iframe {
+  position: absolute; /* Position iframe absolutely */
+  top: 0;
+  left: 0;
+}
+
+.emailForm input,
+.emailForm textarea,
+.emailForm button {
+  width: 98%;
+  padding: 10px;
+  margin: 5px;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.emailForm textarea {
+  resize: vertical; /* Allow vertical resizing */
+  box-shadow: #0056b3;
+}
+
+.emailForm button {
+  background-color: #6b7ae9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+/* Optional: Hover effect for the button */
+.emailForm button:hover {
+  background-color: #0056b3;
+}
+footer {
+
+  margin-top: 10px;
+}
+
+.boxes-container {
+  
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 20px 20px 10px #a0d2eb; /* Add box shadow */
+  word-wrap: break-word;
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  color: #a0d2eb;
+}
+
+.box p {
+  color: #666;
+}
+
+.blink {
+  animation: blink-animation 4s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow effect */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.Container
+{
+  margin-top: auto;
+  
+}
+
+
+.offices
+{
+  width: 45%;
+  padding-top: 100px;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+.card
+{
+  border:none;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes
+{
+  width: 60%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border:solid green;
+  margin-left: 20%;
+  /* margin-right: 10%; */
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 20px 20px 10px #a0d2eb;
+}
+
+.boxes:hover {
+  animation: box-animation 0.5s ease-in-out; /* Apply animation on hover */
+}
+
+@keyframes box-animation {
+  0% {
+    transform: rotate(0deg); /* Initial state */
+  }
+  50% {
+    transform: rotate(5deg); /* Rotate slightly */
+  }
+  100% {
+    transform: rotate(0deg); /* Back to initial state */
+  }
+}
+
+.box:hover {
+  animation: box-animation 0.5s ease-in-out; /* Apply animation on hover */
+}
+
+@keyframes box-animation {
+  0% {
+    transform: rotate(0deg); /* Initial state */
+  }
+  50% {
+    transform: rotate(5deg); /* Rotate slightly */
+  }
+  100% {
+    transform: rotate(0deg); /* Back to initial state */
+  }
+}
+
+/* Scroll Arrow */
+
+.upward-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.upward-arrow:hover {
+  background-color: #f0f0f0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Adjust styles for tablets and desktops */
+  .emailForm {
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  
+  
+  .boxes {
+    width: 45%; /* Adjusted for tablets and desktops */
+    margin-left: 20px; /* Adjusted left margin */
+    margin-right: 20px; /* Adjusted right margin */
+  }
+}

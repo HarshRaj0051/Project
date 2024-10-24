@@ -1,0 +1,108 @@
+.custom-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+
+  .custom-ul a {
+    position: relative;
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .custom-ul a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red; /* Change to your desired color */
+    transition: width 0.4s ease-in-out; /* Add transition for the underline animation */
+  }
+  
+  .custom-ul a:hover::before {
+    width: 100%; /* Expand the underline on hover */
+  }
+  
+  .home-footer-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.4s ease-in-out; /* Add a transition for smoother animation */
+  }
+  
+  .home-footer-link:hover {
+    color: red;
+    transform: translateY(-10rem); /* Move the link 10px upwards on hover */
+  }
+  
+  /* Animation for Services and Company links */
+  .widget-title {
+    position: relative;
+  }
+  
+  .widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #831b1b; /* Change to your desired color */
+    transition: width 0.4s ease-in-out; /* Add transition for the underline animation */
+  }
+  
+  .widget-title:hover::after {
+    width: 100%; /* Expand the underline on hover */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Animation for Services and Company links */
+.widget-title {
+  position: relative;
+}
+
+.widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #831b1b; /* Change to your desired color */
+  transition: width 0.4s ease-in-out; /* Add transition for the underline animation */
+}
+
+.widget-title:hover::after,
+.widget-title.clicked::after {
+  width: 100%; /* Expand the underline on hover and click */
+  animation: blink-animation 0.5s infinite; /* Add blink animation */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+

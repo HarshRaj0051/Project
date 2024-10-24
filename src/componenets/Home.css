@@ -1,0 +1,286 @@
+
+.home{
+  margin-top: 150px;
+  
+}
+
+
+/* WhatsApp Icon Container */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  margin-right: -16px;
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Icon Image */
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Hover Effect */
+.whatsapp-icon:hover {
+  background-color: #25d366; /* WhatsApp brand color */
+}
+
+
+
+.animated-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  /* margin: 20px 0; */
+  margin-left: 60px;
+  width: 1130px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  animation: fadeInUp 1s ease-in-out;
+  box-shadow: 20px 20px 10px #a0d2eb; /* Add box shadow */
+  margin-bottom: 50px;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.upward-arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: rgb(12, 12, 12);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.upward-arrow:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for the page */
+.container-fluid.service {
+  background-color: #fff;
+}
+
+.text-center {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-us, .why-choose-us {
+  background-color: white;
+  padding: 2rem 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  
+}
+
+.about-us h2, .why-choose-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-us p, .why-choose-us p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  max-width: 12610px; /* Adjust the maximum width as needed */
+  max-height: 500px;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 8px;
+  
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-image-container {
+  position: relative;
+}
+
+.carousel-image-container img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-buttons button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-links {
+  position: absolute;
+
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-links button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.carousel-links button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Media Queries for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust WhatsApp icon position */
+  .whatsapp-icon {
+    bottom: 20px;
+    right: 10px;
+  }
+
+  /* Adjust animated box margin */
+  .animated-box {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  /* Adjust carousel text position */
+  .carousel-text {
+    position: absolute;
+    top: 100px;
+    left: 205px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  /* Adjust carousel buttons position */
+  .carousel-buttons {
+    display: none; /* Hide carousel buttons */
+  }
+
+  /* Adjust carousel links position */
+  .carousel-links {
+    bottom: 40px;
+    width: 100%;
+    justify-content: center;
+  } 
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .carousel-image-container {
+    position: relative;
+  }
+  
+  .carousel-image-container img {
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+  }
+
+  
+
+
+}
+

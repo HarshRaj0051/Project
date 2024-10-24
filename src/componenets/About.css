@@ -1,0 +1,450 @@
+.home{
+  margin-top: 120px;
+}
+
+/* WhatsApp Icon Container */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  margin-right: -16px;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Icon Image */
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Hover Effect */
+.whatsapp-icon:hover {
+  background-color: #25d366; /* WhatsApp brand color */
+}
+
+/* For first section */
+.whoweare {
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px auto;
+}
+
+.whoweare .who h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  position: relative;
+  color: #333;
+  transition: text-shadow 0.3s ease;
+}
+
+.whoweare .who h1::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.whoweare .who h1.underline::before {
+  transform: scaleX(1);
+}
+
+.whoweare .who h1:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.whoweare .who p {
+  width: 70%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.whoweare .who-logo {
+  width: 50%;
+  height: 500px;
+  transition: opacity 0.4s ease;
+}
+
+.whoweare .who-logo img {
+  height: 80%;
+
+}
+
+.whoweare .who-logo:hover {
+  opacity: 0.5;
+}
+
+/* For second section */
+.whoweare1 {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.whoweare1 .who h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  position: relative;
+  color: #333;
+  transition: text-shadow 0.3s ease;
+}
+
+.whoweare1 .who h1::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.whoweare1 .who h1.underline::before {
+  transform: scaleX(1);
+}
+
+.whoweare1 .who h1:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.whoweare1 .who p {
+  width: 70%;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.whoweare1 .who-logo {
+  width: 90%;
+  height: 400px;
+  transition: opacity 0.3s ease;
+}
+
+.whoweare1 .who-logo img {
+  height: 80%;
+}
+
+.whoweare1 .who-logo:hover {
+  opacity: 0.8;
+}
+
+/* For third section */
+/* For third section */
+.whoweare2 {
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.whoweare2 .who h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  position: relative;
+  color: #333;
+  transition: text-shadow 0.5s ease;
+}
+
+.whoweare2 .who h1::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.6s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.whoweare2 .who h1.underline::before {
+  transform: scaleX(1);
+}
+
+.whoweare2 .who h1:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.whoweare2 .who p {
+  width: 70%;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.whoweare2 .who-logo {
+  width: 90%;
+  height: 400px;
+  transition: opacity 0.3s ease;
+}
+
+.whoweare2 .who-logo img {
+  height: 90%;
+}
+
+.whoweare2 .who-logo:hover {
+  opacity: 0.3;
+}
+
+.who4 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.who4 p{
+  font-size: 18px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.whatwedo {
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.wahtwedo ol .li {
+  display: flex;
+  gap:10px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  width: 70%;
+}
+
+
+/* Whychooseus */
+  .whychooseus{
+    
+      display: flex;
+      gap:30px;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .whychooseus .choose{
+    width:70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+
+/* About.css */
+
+@keyframes runningUnderline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* For box containers */
+.whatwedo-box,
+.whychooseus-box {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: hsl(0, 20%, 92%);
+  border-radius: 10px;
+  box-shadow: 20 20 10px #a0d2eb;
+  width: 1100px;
+}
+
+
+/* For box headings */
+.box-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* For running underline */
+.running-underline::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a0d2eb;
+  transform-origin: left;
+  animation: runningUnderline 2s infinite linear;
+}
+
+/* For headings with underline effect */
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color:#a0d2eb;
+  transform-origin: left;
+}
+
+
+/* Add animation keyframes for the underline effect */
+@keyframes runningUnderline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Apply the animation to the pseudo-element */
+.whatwedo-heading::before,
+.whychooseus-heading::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Start with transparent color */
+  transform-origin: left;
+  animation: runningUnderline 0.5s forwards; /* Apply animation */
+}
+
+/* Change color and animation duration on hover */
+.whatwedo-heading:hover::before,
+.whychooseus-heading:hover::before {
+  background-color: #a0d2eb; /* Change to desired underline color */
+  animation-duration: 0.3s; /* Adjust animation duration */
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For first section */
+  .whoweare {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .who{
+    margin-top: 60px;
+  }
+
+  
+  /* For second section */
+  .whoweare1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* For third section */
+  .whoweare2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* For fourth section */
+  .whatwedo-box,
+  .whychooseus-box {
+    width: 90%;
+  }
+  
+
+  .whatwedo {
+    width: 100%;
+  }
+
+  .wahtwedo ol .li {
+    width: 100%;
+  }
+
+
+  .who4 {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  /* For first section */
+  .whoweare .who-logo,
+  .whoweare1 .who-logo,
+  .whoweare2 .who-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  /* For fourth section */
+  .whatwedo-box,
+  .whychooseus-box {
+    width: 450px;
+    margin-left: 50px;
+    padding: 15px;
+  }
+
+  .whatwedo {
+    width: 100%;
+  }
+
+  .wahtwedo ol .li {
+    width: 100%;
+  }
+
+  .who4 {
+    width: 100%;
+  }
+
+}
+
+.upward-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.upward-arrow:hover {
+  background-color: #f0f0f0;
+}

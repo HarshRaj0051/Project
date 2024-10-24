@@ -1,0 +1,127 @@
+.container3, .container4 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  padding: 150px;
+}
+
+.box1, .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ceb9b9;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text1, .text2 {
+  text-align: center;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.liquid-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to right, rgb(105, 70, 70), #ff9933);
+  background-size: 200% 100%;
+  animation: liquid 2s infinite;
+}
+
+.blink {
+  text-align: center;
+}
+
+.knowledge-title {
+  animation: blink-animation 5s infinite; /* Adjust the animation duration as needed */
+  margin-top: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow effect */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes liquid {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.box1:hover, .box2:hover {
+  background-color: #e5e5e5;
+  transform: scale(1.4);
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 992px) {
+  .container3, .container4 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 50px; /* Adjust padding for smaller screens */
+  }
+
+  .box1, .box2 {
+    width: 100%;
+    height: 130px; /* Allow height to adjust based on content */
+    margin-bottom: 20px; /* Add space between boxes */
+  }
+
+  .text1, .text2 {
+    padding-top: 50px; /* Adjust padding for text inside boxes */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container3, .container4 {
+    padding: 20px; /* Further adjust padding for smaller screens */
+  }
+
+  .knowledge-title {
+    margin-top: 100px; /* Adjust margin for title */
+  }
+
+  .box1, .box2 {
+    width: 90%; /* Adjust width to fit screen better */
+    margin-bottom: 15px; /* Reduce margin between boxes */
+  }
+
+  .text1, .text2 {
+    padding-top: 30px; /* Further adjust padding for text inside boxes */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container3, .container4 {
+    padding: 10px; /* Further adjust padding for extra small screens */
+  }
+
+  .box1, .box2 {
+    width: 100%; /* Full width for extra small screens */
+    margin-bottom: 10px; /* Further reduce margin between boxes */
+  }
+
+  .text1, .text2 {
+    padding-top: 20px; /* Further adjust padding for text inside boxes */
+  }
+}

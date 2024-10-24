@@ -1,0 +1,54 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flip {
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.3333333s;
+  }
+  
+  .item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .left {
+    flex: 1;
+    padding-left: 70px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .flip .right img{
+    height: 350px;
+    width: 350px;
+  }
+
+
+
+
+
+  
